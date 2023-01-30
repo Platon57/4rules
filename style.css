@@ -1,12 +1,14 @@
-body, h1 {
+body, h1,h2,h3,h4,p,a {
+  font-size: 100%;
+  font-weight: normal;
   margin: 0;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-header {
+.header {
   height: 100vh;
   background-color: #eee;
   background-image: url(https://pictures.s3.yandex.net/frontend-developer/free-course/cover.jpg);
@@ -15,16 +17,63 @@ header {
   text-align: center;
 }
 
-h1 { 
-  padding-top: 100px;
-  font-weight:500;
+.header-title {
   font-size: 140px;
   color: white;
   text-transform: uppercase;
+  font-weight: 500;
+  margin: auto;
+  
 }
 
-div {
+.overlay { 
+display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, .5);
+}
+.content {
+  font-size:0;
+  width:790px;
+  margin: 100px auto 50px;
+}
+  .card { display:inline-block;
+  padding: 45px 45px 70px;
+  margin-bottom: 60px;
+  width: 350px;
+  margin-right:90px;  
+  box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);
+}
+.no-right-margin {
+  margin-right: 0;
+}
+.card-title {
+  margin-bottom:10px;
+  font-weight: 500;
+ font-size: 24px;
+}
+.card-text {
+  font-size: 16px
+}
+.card-image {
+  width:100%;
+   margin-bottom:25px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  height: 300px;
+  background-color: #000;
+  display: flex;
+}
+.footer-author {
+  color:#fff;
+  font-size:24px;
+  margin: auto;
+}
+
+.header-tltle {
+  
 }
